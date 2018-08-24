@@ -10,4 +10,6 @@ RUN apt-get update && \
     apt-get install -y chkrootkit && \
     rm -rf /var/lib/apt/lists/*
 
-CMD chkrootkit -r /data
+ENTRYPOINT ["chkrootkit"]
+
+CMD ["-r" "/data"]
