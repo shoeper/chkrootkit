@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:stable-slim
 
 LABEL maintainer="Sven Höper <sven@hoeper.me>"
 
